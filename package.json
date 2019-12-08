@@ -1,18 +1,31 @@
 {
-    "name": "tutorialbot",
-    "version": "1.0.0",
-    "description": "A Tutorial Bot",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "synopNode",
-    "license": "ISC",
-    "dependencies": {
-      "discord.js": "^11.4.2",
-      "random-puppy": "^1.1.0",
-      "simple-youtube-api": "^5.0.2",
-      "snekfetch": "^4.0.4",
-      "ytdl-core": "^0.25.2"
-    }
-  }
+  "name": "Paradis-bot",
+  "version": "",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "ffmpeg": "0.0.4",
+    "ffmpeg-binaries": "^4.0.0",
+    "moment": "^2.24.0",
+    "opusscript": "0.0.7",
+    "random-puppy": "^1.1.0",
+    "simple-youtube-api": "^5.2.1",
+    "snekfetch": "^4.0.4",
+    "util-deprecate": "^1.0.2",
+    "uuid": "^3.3.3",
+    "verror": "^1.10.0",
+    "ws": "^7.1.2",
+    "ytdl-core": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas",
+  "license": "ISC"
+}
