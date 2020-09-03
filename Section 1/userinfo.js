@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 
 module.exports.run = async (bot, message, args, cmd) => {
     const status = {
@@ -29,7 +29,7 @@ const getPresenceStatus = status => {
    return presence
  }
 
-    let embed = new Discord.MessageEmbed()
+    let embed = new MessageEmbed()
         .setColor("#8697CB")
         .setAuthor(member.user.username, member.user.displayAvatarURL())
         .setThumbnail(member.user.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
