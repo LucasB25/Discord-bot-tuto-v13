@@ -1,14 +1,13 @@
 const { MessageEmbed } = require('discord.js');
 const moment = require('moment');
 
-module.exports.run = async (bot, message, args, cmd) => {
-    const status = {
-        online: "<:NAME:ID> En ligne",
-        idle: "<:NAME:ID> Inactif",
-        dnd: "<:NAME:ID> Ne pas déranger",
-        offline: "<:NAME:ID> Hors ligne / invisible",
-        streaming: "<:NAME:ID> En Stream"
-      }
+const status = {
+    online: "<:NAME:ID> En ligne",
+    idle: "<:NAME:ID> Inactif",
+    dnd: "<:NAME:ID> Ne pas déranger",
+    offline: "<:NAME:ID> Hors ligne / invisible",
+    streaming: "<:NAME:ID> En Stream"
+}
         
 const member = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
 const getPresenceStatus = status => {
@@ -42,9 +41,4 @@ const getPresenceStatus = status => {
         .setFooter(`Information utilisateur `)
         .setTimestamp()
         message.channel.send(embed);
-
 }
-module.exports.help = {
-    name: 'userinfo',
-    aliases: ['ui'],
-};
