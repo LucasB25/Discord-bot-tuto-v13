@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-const moment = require('moment');
+const dayjs = require('day.js');
 
 const status = {
     online: "<:NAME:ID> En ligne",
@@ -36,8 +36,8 @@ const getPresenceStatus = status => {
         .addField('Bot', member.user.bot ? '🤖 Oui' : '👤 Non', true)
         .addField("Status", `${status[member.user.presence.status]}`, true)
         .addField("Platforme", getPresenceStatus(member.user.presence.clientStatus), true)
-        .addField("Compte crée le", moment(member.user.createdAt).format('DD/MM/YYYY HH:mm:ss'), true)
-        .addField("A rejoint le serveur", moment(member.joinedAt).format('DD/MM/YYYY HH:mm:ss'), true)
+        .addField("Compte crée le", dayjs(member.user.createdAt).format('DD/MM/YYYY HH:mm:ss'), true)
+        .addField("A rejoint le serveur", dayjs(member.joinedAt).format('DD/MM/YYYY HH:mm:ss'), true)
         .setFooter(`Information utilisateur `)
         .setTimestamp()
         message.channel.send(embed);
