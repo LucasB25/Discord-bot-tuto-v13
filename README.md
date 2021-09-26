@@ -49,7 +49,7 @@ client.on('message', message => {
 
 9. Lancer le bot en tapant dans la console :
 ```
-> node bot.js
+> npm start
 ```
 Si tout s'est bien passé, il devrait apparaître **Logged in** dans la console, et le bot devrait être connecté sur Discord. Essayer d'envoyer **!ping**, le bot devrait répondre **pong**. Le bot est maintenant configuré. 👏
 
