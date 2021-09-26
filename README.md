@@ -25,22 +25,24 @@ Suivre ce lien et ajouter le bot à l'un de ses serveurs.
 > npm install discord.js
 ```
 
-7. Créer un fichier `bot.js` et copier dedans le code ci-dessous :
+7. Créer un fichier `index.js` et copier dedans le code ci-dessous :
 ```js
-const Discord = require('discord.js');
-const client = new Discord.Client();
-
-client.login('TOKEN');
+const { Client, Intents } = require('discord.js');
+const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('message', message => {
-  if (message.content === "!ping") {
-    message.channel.send("pong");
+client.on('interactionCreate', async interaction => {
+  if (!interaction.isCommand()) return;
+
+  if (interaction.commandName === 'ping') {
+    await interaction.reply('Pong!');
   }
 });
+
+client.login('token');
 ```
 
 8. Remplacer TOKEN dans le code ci-dessus par le token trouvable dans l'onglet Bot sur la page Discord de l'application.
