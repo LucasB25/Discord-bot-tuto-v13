@@ -59,5 +59,5 @@ Si tout s'est bien passé, il devrait apparaître **Logged in** dans la console,
 
 <p align="center"> 
   Visitor count<br>
-  <img src="https://profile-counter.glitch.me/LucasB25/Discord-bot-tuto-v13/count.svg" />
+  <img src="https://profile-counter.glitch.me/Discord-bot-tuto-v13/count.svg" />
 </p>
