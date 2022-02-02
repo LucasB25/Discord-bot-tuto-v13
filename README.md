@@ -56,3 +56,8 @@ client.login('token');
 Si tout s'est bien passé, il devrait apparaître **Logged in** dans la console, et le bot devrait être connecté sur Discord. Essayer d'envoyer **!ping**, le bot devrait répondre **pong**. Le bot est maintenant configuré. 👏
 
 10. Pour aller plus loin : La [documentation](https://discord.js.org/#/docs/main/stable/general/welcome) et le [guide](https://discordjs.guide/) de **discord.js**.
+
+<p align="center"> 
+  Visitor count<br>
+  <img src="https://profile-counter.glitch.me/LucasB25/Discord-bot-tuto-v13/count.svg" />
+</p>
