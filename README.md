@@ -21,7 +21,7 @@ Suivre ce lien et ajouter le bot à l'un de ses serveurs.
 
 6. Ouvrir la console **Node.js command prompt**, se rendre dans le dossier précédemment créer, et installer `discord.js` :
 ```
-> cd C:\<chemin_vers_le_dossier>\newdev\
+> cd C:\<chemin_vers_le_dossier>\Discord-bot-tuto-v13\
 > npm install discord.js
 ```
 
