@@ -57,6 +57,7 @@ Si tout s'est bien passé, il devrait apparaître **Logged in** dans la console,
 
 10. Pour aller plus loin : La [documentation](https://discord.js.org/#/docs/main/stable/general/welcome) et le [guide](https://discordjs.guide/) de **discord.js**.
 
+
 <p align="center"> 
   Visitor count<br>
   <img src="https://profile-counter.glitch.me/Discord-bot-tuto-v13/count.svg" />
